@@ -2,97 +2,49 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
-.hero{
-  scale: 1;
+
+.page1{
   height: 100vh;
   width: 100%;
-  background-image: url("media/backpx.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+#container{
+  height: 100%;
+  width: 100%;
+  display: flex;
   position: relative;
-  overflow: hidden;
-  animation: heyo 1800ms ease-in-out forwards;
-  animation-delay: 900ms;
-  scrollbar-width: 0;
 }
 
-@keyframes heyo {
-  0%{
-    scale: 1;
-    rotate: 0deg;
-  }
-  
-  45%{
-    scale: 2;
-    rotate: -10deg;
-  }
-  60%{
-    scale: 2;
-    rotate: -10deg;
-  }
-  100%{
-    scale: 1;
-    rotate: 0deg;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-.text{
-  background-color: rgb(0, 0, 0);
-  color: white;
-  font-family: "bespoke-stencil", sans-serif;
-  font-size: 12vw; 
+#container img{
   width: 100%;
   height: 100%;
-  text-align: center;
+  object-fit: cover;
+  object-position: center;
+}
+#page2{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
   position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   mix-blend-mode:color-burn;
-  animation: marginsekhel 1600ms forwards;
+  overflow: hidden;
 }
 
-.text h1{
+
+#page2 p{
+  font-size: 20vw;
+  font-family: "bespoke stencil";
   font-weight: 900;
-  animation: anima 1800ms ease-in forwards;
-  letter-spacing:-2vw;
-}
-
-@keyframes anima {
-  0% {
-    scale: 1;
-    rotate: 0deg;
-  }
+  height: fit-content;
+  width: fit-content;
+  color: white;
   
-  70% {
-    scale: 3;
-    rotate: 20deg;
-  }
-  100% {
-    scale: 25;
-    rotate: 107deg;
-  }
-}
-
-@keyframes marginsekhel {
-  0%{
-      padding-top: 8vw;
-
-  }
-  90%{
-    padding-top: 8vw;
-  }
-  100%{
-      padding-top: 42vw;
-
-  }
 }
